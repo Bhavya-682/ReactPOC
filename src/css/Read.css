@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(232, 222, 194);
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .add-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  
+  .product-list{
+    display: grid;
+    flex-wrap: wrap;
+    flex: 1 1 calc(33.333% - 20px); 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .product-item{
+    background-color: #fff;
+    height: 380px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+  }
+  li img {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .button-prod {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .button-prod button {
+    padding: 5px 10px; 
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-prod button:hover {
+    opacity: 0.9;
+  }
+  
+  .button-prod button:nth-child(1) {
+    background-color: #28a745;
+  }
+  
+  .button-prod button:nth-child(1):hover {
+    background-color:#218838;
+  }
+  
+  .button-prod button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  .button-prod button:nth-child(2):hover {
+    background-color: #c82333;
+  }
