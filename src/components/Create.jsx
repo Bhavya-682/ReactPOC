@@ -8,6 +8,7 @@ const Create = ({ show, onClose, onAdd }) => {
   const [price, setPrice] = useState('');
   const [imagePreview, setImagePreview] = useState('');
 
+  //To handle Image change
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {

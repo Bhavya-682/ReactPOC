@@ -84,7 +84,6 @@
 }
 
 .signup{
-  margin-right: 70px;
   text-decoration: none;
   color: white;
   border: 10px;
@@ -98,7 +97,6 @@ link:hover{
 }
 
 .product{
-  margin-right: 70px;
   text-decoration: none;
   color: white;
   border: 10px;
@@ -108,7 +106,7 @@ link:hover{
 }
 
 .cart{
-  margin-right: 70px;
+  margin-right: 80%;
   text-decoration: none;
   color: white;
   border: 10px;

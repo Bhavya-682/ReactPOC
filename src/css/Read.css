@@ -88,9 +88,18 @@ body {
   }
   
   .button-prod button:nth-child(2) {
-    background-color: #dc3545;
+    background-color: #28a745;
   }
   
   .button-prod button:nth-child(2):hover {
+    background-color: #218838;
+  }
+
+   .button-prod button:nth-child(3) {
+    background-color: #dc3545;
+  }
+  
+  .button-prod button:nth-child(3):hover {
     background-color: #c82333;
   }
+

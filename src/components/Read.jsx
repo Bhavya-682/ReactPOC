@@ -1,45 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import { useProductContext } from '../Context/ProductContext';
+import { useState } from 'react';
 import Update from './Update';
 import Delete from './Delete';
 import Create from './Create'; 
 import '../css/Read.css';
 
-
 const Read = () => {
-  const [products, setProducts] = useState(() => {
-    const saved = localStorage.getItem('products');
-    return saved ? JSON.parse(saved) : [];
-  });
+ 
+  const { products, setProducts } = useProductContext();
+  const { addToCart } = useProductContext();
 
   const [showUpdateModal, setShowUpdateModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [showAddModal, setShowAddModal] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-
-  useEffect(() => {
-    const fetchProducts= async()=>{
-      const storedProducts = localStorage.getItem('products');
-    if (!storedProducts) {
-      try{
-        const response=await
-        axios.get('https://dummyjson.com/products');
-        const productData=response.data.products;
-        setProducts(productData);
-        localStorage.setItem('products',JSON.stringify(productData));
-      } catch(error){
-        console.error('error fetching products',error);
-      }
-    }else{
-      setProducts(JSON.parse(storedProducts));
-    }
-    };
-    fetchProducts();
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('products', JSON.stringify(products));
-  }, [products]);
 
   const handleUpdateClick = (product) => {
     setSelectedProduct(product);
@@ -99,6 +73,7 @@ const Read = () => {
             <div className="button-prod">
               <button onClick={() => handleUpdateClick(product)}>Update</button>
               <button onClick={() => handleDeleteClick(product)}>Delete</button>
+              <button onClick={()=> addToCart(product)}>Add to Cart</button>
             </div>
           </li>
         ))}
