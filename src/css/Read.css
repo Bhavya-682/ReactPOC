@@ -38,7 +38,7 @@ body {
   }
 
   .product-item{
-    background-color: #fff;
+   background-color: rgb(126, 169, 169);
     height: 380px;
     border-radius: 8px;
     margin: 10px;

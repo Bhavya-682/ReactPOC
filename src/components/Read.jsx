@@ -7,8 +7,7 @@ import '../css/Read.css';
 
 const Read = () => {
  
-  const { products, setProducts } = useProductContext();
-  const { addToCart } = useProductContext();
+  const { products, setProducts,addToCart } = useProductContext();
 
   const [showUpdateModal, setShowUpdateModal] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -55,10 +54,10 @@ const Read = () => {
     <div className="read-container">
       <h1>Products</h1>
       <button className="add-button" onClick={handleAddClick}>Add Product</button>
-
       <ul className="product-list">
         {products.map((product) => (
           <li key={product.id} className="product-item">
+            <p style={{color:"black"}}>{product.name} </p>
             <h2>{product.title}</h2>
             <p>{product.description}</p>
             <p>Price: ${product.price}</p>

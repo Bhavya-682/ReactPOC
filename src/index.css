@@ -37,50 +37,15 @@
 .close-button:hover {
   color: #000;
 }
-/*  
-.modal-content input[type="text"],
-.modal-content input[type="number"],
-.modal-content input[type="file"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
- 
-.modal-content button {
-  padding: 6px 8px;
-  margin: 5px;
-  margin-left: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: green;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
- 
-.modal-content button:hover {
-  background-color: rgb(63, 139, 63);
-}
- 
-.modal-content img {
-  margin-top: 10px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
- 
-   */
 
-   nav {
+nav {
   width: 97%;
   background-color: #333;
   color: white;
   display: flex;
-  justify-content: space-between; /* This ensures space between items */
-  align-items: center; /* Vertically align items */
-  padding: 15px 20px; /* Adjusted padding for better spacing */
+  justify-content: space-between;
+  align-items: center; 
+  padding: 15px 20px; 
 }
 
 .signup{
@@ -114,3 +79,14 @@ link:hover{
   background-color: red;
   border-radius: 4px;
 }
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
