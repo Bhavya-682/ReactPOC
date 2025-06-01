@@ -19,7 +19,7 @@ const Navbar = () => {
           <button onClick={handleTheme}>Toggle</button>
         </nav>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;

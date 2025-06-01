@@ -11,7 +11,7 @@ const Signup = () => {
   });
 
   const [errors, setErrors] = useState({});
-
+  const [,setIsLoggedIn]=useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
@@ -89,6 +89,7 @@ const Signup = () => {
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       alert("Registration successful");
+      setIsLoggedIn(true); 
       setFormData({
         username: "",
         email: "",
@@ -101,6 +102,19 @@ const Signup = () => {
       setErrors(validationErrors);
     }
   };
+
+//   const handleSignOut = () => {
+//   setFormData({
+//     username: "",
+//     email: "",
+//     password: "",
+//     confirmPassword: "",
+//     gender: "",
+//   });
+//   setErrors({});
+//   setIsLoggedIn(false); // ✅ Reset login status
+//   alert("Signed out successfully");
+// };
 
   return (
     <div className="root-container">

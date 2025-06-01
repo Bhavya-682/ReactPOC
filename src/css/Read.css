@@ -1,11 +1,14 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(232, 222, 194);
+    background-color: rgb(208, 162, 37);
     margin: 0;
     padding: 0;
+    /* background-image: url("../../Images/Online\ Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
   }
   
-  h1 {
+  h1 { 
     text-align: center;
     color: #333;
     margin-top: 20px;
@@ -52,6 +55,7 @@ body {
     text-align: center;
 
   }
+
   li img {
     display: block;
     margin: 0 auto 10px;
@@ -103,3 +107,13 @@ body {
     background-color: #c82333;
   }
 
+/* import { render, screen } from "@testing-library/react";
+import App from "./App";
+
+test("renders learn react link", () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+  const signUpButton = screen.getByRole("button", { name: "sign up" });
+  expect(signUpButton).toBeInTheDocument();
+}); */

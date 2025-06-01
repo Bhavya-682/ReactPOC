@@ -8,7 +8,6 @@ const Create = ({ show, onClose, onAdd }) => {
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
   const [imagePreview, setImagePreview] = useState('');
-
   const queryClient = useQueryClient();
 
   const createProduct = (newProduct) => {
